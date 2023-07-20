@@ -51,13 +51,13 @@ CREATE TABLE usuarios (
   id      INTEGER NOT NULL PRIMARY KEY,
   nome    TEXT    NOT NULL,
   email   TEXT    NOT NULL,
-  password   TEXT    NOT NULL,
+  senha   TEXT    NOT NULL,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 --Senha correspondente a "123456"
-INSERT INTO usuarios (nome, email, password)
+INSERT INTO usuarios (nome, email, senha)
 VALUES 
    ("Raphael Lucas", "raphael@teste.com.br", "$2a$08$O25sT46kb7UEjRFNIJcEiu/tOOB8O.ddr.GuAO/PuQOfwNobGeXXG");
 

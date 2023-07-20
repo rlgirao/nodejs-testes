@@ -24,7 +24,7 @@ class UsuariosService {
 
   async atualizarUsuario(id, body) {
     try {
-      body.password = await bcryptjs.hash(body.password, 8);
+      body.senha = await bcryptjs.hash(body.senha, 8);
       const usuarioAtual = await Usuario.pegarPeloId(id);
       const novoUsuario = new Usuario({ ...usuarioAtual, ...body });
       const resposta = await novoUsuario.salvar(novoUsuario);

@@ -7,14 +7,14 @@ class Usuario {
     id,
     nome,
     email,
-    password,
+    senha,
     created_at,
     updated_at
   }) {
     this.id = null || id;
     this.nome = nome;
     this.email = email;
-    this.password = password;
+    this.senha = senha;
     this.created_at = created_at || new Date().toISOString();
     this.updated_at = updated_at || new Date().toISOString();
   }

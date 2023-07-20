@@ -1,10 +1,10 @@
 {
-  "name": "api-js-local",
+  "name": "nodejs-testes",
   "version": "1.0.0",
-  "description": "",
+  "description": "Api de livraria com nodejs",
   "main": "index.js",
   "engines": {
-    "node": "18.15.0"
+    "node": "16.14.2"
   },
   "scripts": {
     "dev": "nodemon server.js",
@@ -13,7 +13,7 @@
     "test:coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watchAll --coverage"
   },
   "keywords": [],
-  "author": "",
+  "author": "Raphael Lucas Girao de Lima",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
